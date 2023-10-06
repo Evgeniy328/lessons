@@ -1,0 +1,103 @@
+/* підключення шрифтів */
+@import url("https://fonts.googleapis.com/css?family=Poppins:600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Text:regular&display=swap");
+
+/* підключення файлу скидання стилів */
+@import url(reset.css);
+/* основні стилі */
+
+/* основні стилі */
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    color: #474747;
+    background-color: #FFF9F4;
+    font-weight: 400;
+    padding-bottom: 100px;
+  }
+
+header{
+    padding: 30px 5px;
+}
+
+  [class*="container"] {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+/*======================================СТИЛІ ДЛЯ ШАПКИ======================= */
+
+.header__nav {
+    text-align: center;
+}
+
+.list__item {
+    display: inline-block;
+    margin: 5px 50px;
+    color: rgb(24, 51, 172);
+    font-weight: 600;
+}
+
+/* ============================== СТИЛІ ДЛЯ JEWELLERY ============================ */
+ 
+.jeweleery-text-block {
+    font-size: 20px;
+    display: inline-block;
+    max-width: 580px;
+    padding: 21px 25px 21px 0px ;
+}
+.first__title {
+    color: #D06B00;
+    font-size: 28px;
+    margin-bottom:13px ;
+
+}
+.hero__title {
+    color: #0E333D;
+    font-family: DM Serif Text;
+    font-size: 59px;
+    line-height: 1.465;
+    margin-bottom: 28px;
+}
+.text-block p:not(:last-child){
+    margin-bottom: 45px;
+}
+.jewellery-unit {
+    line-height: 1.8;
+}
+.jeweleery-img-block {
+    font-size: 0;
+    max-width: 568px;
+    vertical-align: top;
+    display: inline-block;
+}
+.jeweleery-img-block img{
+    max-width: 100%;
+}
+.girl {
+    margin-right: 22px;
+}
+
+.jewelleryfooter {
+padding: 50px 0;
+}
+.transition-list {
+text-align: center;
+}
+.transition__item {
+    display: inline-block;
+    margin: 0 20px;
+}
+.transition-link {
+color: #D06B00;
+font-weight: 600;
+font-family: Poppins;
+}
+
+.yellow{
+color: yellow;
+background-color: rgb(8, 0, 255);
+padding: 5px;
+border-radius: 5px;
+}

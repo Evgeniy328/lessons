@@ -1,0 +1,145 @@
+/* підключення шрифтів */
+@import url("https://fonts.googleapis.com/css?family=Poppins:600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Text:regular&display=swap");
+
+/* підключення файлу скидання стилів */
+@import url(reset.css);
+
+/* ======================================================================= */
+ 
+/* основні стилі */
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    color: #7d7d7d;
+    font-weight: 400;
+    margin-bottom: 100px;
+  }
+
+header{
+    padding: 30px 5px;
+}
+
+  [class*="container"] {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+/*======================================СТИЛІ ДЛЯ ЗАГОЛОВКА======================= */
+.header__title{
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 25px;
+    color: blue;
+}
+
+span{
+    text-decoration: underline;
+    text-decoration-color: rgb(50, 255, 67);
+    text-decoration-style: wavy;
+    color: chocolate;
+}
+/*======================================СТИЛІ ДЛЯ ШАПКИ======================= */
+
+.header__nav {
+    text-align: center;
+}
+
+.list__item {
+    display: inline-block;
+    margin: 5px 50px;
+    color: rgb(24, 51, 172);
+    font-weight: 600;
+}
+/*====================================== СТИЛІ ДЛЯ whyus ======================= */
+.whyus-block {
+     max-width: 722px;
+    margin: 0 auto;
+}
+.whyus-img {
+    margin: 0 0 37px;
+}
+.whyus-img img{
+    max-width: 100%;
+}
+.whyus__title {
+    line-height: 1.27;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: Poppins;
+    color: #37393F;
+    margin-bottom: 12.5px;
+}
+.text {
+    line-height: 1.46;
+    margin-bottom: 40px;
+}
+.text p:not(:last-child){
+    margin-bottom: 15px;
+}
+
+.whyus__subtitle {
+    color: #6B77E5;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.27;
+    margin-bottom: 12px;
+}
+/* ====================== стилізація блоку Benefits ============================== */
+ 
+.benefits {
+    max-width: 722px;
+    font-size: 0;
+    margin-bottom: 48px;
+}
+.block__benefits-img{
+    vertical-align: top;
+    display: inline-block;
+    max-width: 331px;
+}
+.block__benefits-img img{
+    max-width: 100%;
+}
+.content-benefits {
+    display: inline-block;
+    max-width: 332px;
+    padding-left: 29px;
+    font-size: 18px;
+}
+.benefits__title {
+    color: #37393F;
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.27;
+    margin-bottom: 15px;
+}
+.benefits__sub-title {
+    color: #40DDB6;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.27;
+    margin-bottom: 23.5px;
+    }
+.benefits-list li{
+    margin-bottom: 35px;
+}
+.benefits-list li::before{
+    content: "✅";
+} 
+/* ================================== футер =============================================*/
+.footer{
+     padding-bottom: 50px;
+}
+.next{
+    width: 100%;
+    font-size: 20px;
+    color: #6B77E5;
+    background: yellow;
+}
+.transition{
+    text-align: center;
+}
