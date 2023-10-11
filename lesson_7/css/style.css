@@ -1,0 +1,415 @@
+ /* підключення файлу скидання стилів */
+@import url(reset.css);
+
+/* Підключення шрифтів */
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Infant:700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500&display=swap");
+
+/* ============= Causten font ============================ */
+
+@font-face {
+    font-family: "Causten";
+    src:
+        url("../fonts/cousten/Causten-Regular.woff2") format("woff2"),
+        url("../fonts/cousten/Causten-Regular.woff") format("woff");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Causten";
+    src:
+        url("../fonts/cousten/Causten-Bold.woff2") format("woff2"),
+        url("../fonts/cousten/Causten-Bold.woff") format("woff");
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+/* ============= Core sans c font ============================ */
+@font-face {
+    font-family: "Core Sans C";
+    src:
+        url("../fonts/core_sans_c/CoreSansC-65Bold.woff2") format("woff2"),
+        url("../fonts/core_sans_c/CoreSansC-65Bold.woff") format("woff");
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+}
+/* ============================================================== */
+
+ 
+
+/* ============================ Основні стилі ================================== */
+.main{
+    padding: 100px 0;
+}
+/* ============================== jewellery ====================================== */
+
+
+.jewellery {
+    max-width: 1133px;
+    padding: 0 15px;
+    margin: 0 auto;
+    font-family: "Cormorant Infant";
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 100px;
+}
+.jewellery-textblock {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 503px;
+    margin-right: 75px;
+}
+.what__item {
+    color: #D58417;
+    font-size: 20px;
+    margin-bottom: 27px;
+}
+.create__item {
+    font-size: 64px;
+    color: #000;
+    margin-bottom: 31px;
+}
+.jewellery__unit {
+    line-height: 1.5;
+    color: #606060;
+    font-size: 30px;
+}
+.jewellery-imgblock {
+    display: inline-block;
+    font-size: 0;
+    max-width: 525px;
+    max-height: 520px;
+     
+}
+ 
+.jewellery-imgsmall {
+    display: inline-block;
+    vertical-align: middle;
+    width: 177px;
+    height: 336px;
+    margin-right: 25px;
+    border-radius: 235px;
+    border: 1px solid #502203;
+    z-index: 1;
+     
+}
+.imgsmal {
+    padding: 14px  0;
+    margin: 0 0 0 -10px;
+    border-radius: 235px;
+     z-index: 2;
+}
+
+.jewellery-imgbig {
+    display: inline-block;
+    vertical-align: middle;
+    height: 506px;
+    width: 308px;
+    border-radius: 235px;
+    border: 1px solid #502203;
+}
+.imgbig {
+    padding: 19px 0 0 0;
+    margin: 0 0 0 -11px;
+}
+/* ============================================================== */
+
+
+/* ====================== Licencing =============================== */
+.consulting{
+    max-width: 1248px;
+    padding: 0 15px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+.licencing {
+    max-width: 1218px;
+    font-family: "Inter" , sans-serif ;
+    font-size: 18px;
+    font-weight: 400;
+    color: #7D7D7D;
+    line-height: 1.46;
+}
+.sqare__title {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 18px;
+    color: #37393F;
+    line-height: 1.2;
+}
+
+.licencing  h1,
+.licencing  h2,
+.licencing  h3,
+.licencing  h4
+{
+    color: #37393F;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    line-height: 1.21;
+}
+
+.licencing__header {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.labelwithsqare {
+    display: inline-block;
+    font-size: 0;
+    margin-bottom: 16px;
+}
+.sqare{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #40DDB6;
+    margin-right: 6px;
+     
+}
+ 
+.licencing__herotitle {
+    font-size: 60px;
+}
+.second__title {
+    font-size: 40px;
+    margin-bottom: 11px;
+}
+ 
+.licencing__subtitle {
+    font-size: 30px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+.item1{
+    margin-bottom: 32px;
+}
+.item{
+    margin-bottom: 24px;
+}
+.item3{
+    margin-bottom: 100px;
+}
+.green__title {
+    color: #40DDB6;
+    font-weight: 400;
+}
+.green__block {
+    color: #40DDB6;
+}
+ 
+.green__span {
+    color: #40DDB6;
+}
+/* ======================================= Project Information ===================================== */
+.progect__information {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 15px;
+    margin-bottom: 100px;
+}
+.project{
+    color: #7D7D7D;
+    font-family: "Inter" , sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.46;
+}
+.project__herotitle {
+    color: #37393F;
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.27;
+    margin-bottom: 13px;
+}
+.progect__textblock p:not(:last-child){
+margin-bottom: 25px;
+}
+.progect__textblock{
+    margin-bottom: 35px;
+}
+
+  .progect__ol-list, .project__list{
+    margin-bottom: 35px;
+    font-weight: 500;
+}
+ 
+.progect__ol-list > li:not(:last-child) {
+    margin-bottom: 25px;
+}
+/* я цей момент маю на увазі, тре передивитись урок :) */
+.project__list > li:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.project__list {
+    padding-left: 32px;
+}
+.project-list__item {
+    list-style-type: disc;
+    
+}
+.progect__ol-list {
+    padding-left: 48px;
+}
+.ol-list__item {
+    list-style-type: decimal-leading-zero;
+}
+
+.marginnone{
+    margin-bottom: 0;
+}
+/* ===================== Clothing for woman =================== */
+.clothingforwoman {
+    max-width: 1270px;
+    padding: 0 15px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+.clothing {
+    max-width: 1240px;
+    padding-left: 21px;
+    color: #807D7E;
+    font-family: "Causten";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.67;
+    letter-spacing: 0.4px;
+}
+.clothing__firstbox {
+    margin-bottom: 30px;
+    font-size: 0;
+}
+.clothing__firstbox > * {
+    vertical-align: top;
+}
+.rectanglecolor {
+    width: 6px;
+    height: 28px;
+    border-radius: 10px;
+    background: #8a33fd;
+    display: inline-block;
+    margin-right: 15px;
+}
+.clothing__hero-title {
+    display: inline-block;
+    color: #3C4242;
+    font-family: "Core Sans C";
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 0.56px;
+    
+}
+.clothing-text__box1{
+    margin-bottom: 25px;
+}
+.clothing-text__box2{
+    margin-bottom: 20px;
+}
+.clothing__subtitle {
+    font-family: "Core Sans C";
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.clothing__unit:not(:last-child) {
+    margin-bottom: 20px;
+}
+.clothing__bold {
+    font-weight: 700;
+}
+.see__more {
+    font-family: "Core Sans C";
+    font-weight: 600;
+}
+/* ===================== практика ============================= */
+.practice {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.practice__title {
+    text-align: center;
+    font-family: "Cormorant Infant";
+    font-weight: 700;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px black;
+    margin-bottom: 100px;
+
+}
+.hello{
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    text-shadow: 2px 2px rgb(0, 89, 255);
+    color: blueviolet;
+    margin-bottom: 100px;
+    width: 200px;
+    height: 100px;
+    border: 15px dotted yellow;
+    outline: 25px solid rgb(0, 191, 255);
+    margin: 0 auto;
+    padding: 25px 0;
+    border-radius: 25px;
+    background-color: antiquewhite;
+}
+
+.practice__container {
+    max-width: 1000px;
+}
+.poligon {
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 50px;
+}
+.poligon1 {
+    margin-top: 50px;
+    background-color: #8a33fd;
+    border-radius: 25px;
+    outline: 10px dotted rgb(225, 255, 0);
+    box-shadow: 10px 10px 5px red, -10px -10px 5px rgb(255, 0, 238);
+}
+.poligon2 {
+    display: inline-block;
+    background-color: #ff0000;
+    border-top: 10px solid blue ;
+    border-right: 10px dashed orange;
+    border-bottom: 10px groove black;
+    border-left: 10px double rgb(255, 0, 238);
+}
+.poligon3 {
+    background-color: #40DDB6;
+    border-radius: 200px 0 200px 0;
+     
+    
+}
+.poligon4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: yellow;
+    padding-top: 120px;
+    border-right: 10px solid black;
+    border-left: 10px solid black;
+    border-bottom: 10px solid black;
+    border-top: 10px dashed black;
+}
+.zagolovok{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+.xz{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration:overline;
+    color: pink;
+}
