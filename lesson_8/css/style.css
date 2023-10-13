@@ -1,0 +1,462 @@
+ /* підключення файлу скидання стилів */
+@import url(reset.css);
+
+/* Підключення шрифтів */
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Infant:700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500&display=swap");
+
+/* ============= Causten font ============================ */
+
+@font-face {
+    font-family: "Causten";
+    src:
+        url("../fonts/cousten/Causten-Regular.woff2") format("woff2"),
+        url("../fonts/cousten/Causten-Regular.woff") format("woff");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: "Causten";
+	src:
+		url("../fonts/cousten/Causten-Light.woff2") format("woff2"),
+		url("../fonts/cousten/Causten-Light.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+    font-family: "Causten";
+    src:
+        url("../fonts/cousten/Causten-Bold.woff2") format("woff2"),
+        url("../fonts/cousten/Causten-Bold.woff") format("woff");
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Causten";
+    src:
+        url("../fonts/cousten/Causten-Semi-Bold.woff2") format("woff2"),
+        url("../fonts/cousten/Causten-Semi-Bold.woff") format("woff");
+    font-weight: 800;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+/* ============= Core sans c font ============================ */
+@font-face {
+    font-family: "Core Sans C";
+    src:
+        url("../fonts/core_sans_c/CoreSansC-65Bold.woff2") format("woff2"),
+        url("../fonts/core_sans_c/CoreSansC-65Bold.woff") format("woff");
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: "Fontspring-coresansar85";
+	src: url("../fonts/core_sans_c/CoreSansC-85HeavyIt.woff2") format("woff2"),
+		url("../fonts/core_sans_c/CoreSansC-85HeavyIt.woff") format("woff");
+	font-display: swap;
+	font-weight: normal;
+	font-style: normal;
+}
+/* ============================================================== */
+
+/* ============================ Основні стилі ================================== */
+body{
+    font-size: 18px;
+}
+
+/* ============================ CONSALTING ======================================== */
+.consalting {
+    max-width: 1053px;
+    padding: 0 15px;
+    margin: 0 auto;
+    font-family: "inter" , serif;
+    font-weight: 400;
+    color: #7D7D7D;
+    line-height: 1.46;
+    margin-bottom: 100px;
+}
+.consalting__container {
+    max-width: 1023px;
+}
+.consalting__logo {
+    margin-bottom: 16px;
+}
+.logo__sqear {
+    background: #40DDB6;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    
+}
+.logo__title {
+    display: inline-block;
+    color: #37393F;
+    font-weight: 500;
+    line-height: 1.22;
+}
+.consalting__title {
+    color: #37393F;
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.21;
+    max-width: 415px;
+    margin-bottom: 20px;
+}
+.consalting__unit{
+    max-width: 673px;
+    margin-bottom: 20px;
+}
+.consalting__unit p:not(:last-child){
+    padding-bottom: 15px;
+}
+.consalting__list {
+    color: #37393F;
+    font-size: 20px;
+    line-height: 1.65;
+    font-family: "Poppins", serif;
+    margin-bottom: 43px;
+}
+
+.list__item {
+background: url(../img/Vector1.svg) 0 3px no-repeat ;
+padding-left: 35px;
+min-height: 30px;
+}
+
+.consalting__list li:not(:last-child){
+    margin-bottom: 23px;
+}
+.consalting__achievments {
+    margin-bottom: 37px;
+}
+.achievments__block {
+    max-width: 295px;
+    border: 1px solid #E3E3E3;
+    display: inline-block;
+    vertical-align: top;
+    padding: 32px 32px 32px 90px;
+    margin-right: 20px;
+     
+}
+.achievments__img1 {
+     
+    background: url(../img/Icon1.svg) 31px 32px no-repeat;
+}
+.achievments__img2 {
+    background: url(../img/Icon2.svg) 37px 31px no-repeat;
+}
+
+.achievments__title {
+    color: #37393F;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Poppins", serif;
+    line-height: 1.5;
+    margin-bottom: 3px;
+}
+.achievments__unit {
+    font-size: 16px;
+    line-height: 1.35;
+}
+.consalting__button {
+    display: inline-block;
+    color: #FFF;
+    width: 184px;
+    height: 65px;
+    background: #6B77E5;
+    padding: 22px 27px;
+    font-weight: 600;
+    line-height: normal;
+}
+/* ===================== Clothing for woman =================== */
+.clothingforwoman {
+    max-width: 1270px;
+    padding: 0 15px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+.clothing {
+    max-width: 1240px;
+    padding-left: 21px;
+    color: #807D7E;
+    font-family: "Causten";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.67;
+    letter-spacing: 0.4px;
+}
+.clothing__firstbox {
+    margin-bottom: 30px;
+    font-size: 0;
+}
+.clothing__firstbox > * {
+    vertical-align: top;
+}
+.rectanglecolor {
+    width: 6px;
+    height: 28px;
+    border-radius: 10px;
+    background: #8a33fd;
+    display: inline-block;
+    margin-right: 15px;
+}
+.clothing__hero-title {
+    display: inline-block;
+    color: #3C4242;
+    font-family: "Core Sans C";
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 0.56px;
+    
+}
+.clothing-text__box1{
+    margin-bottom: 25px;
+}
+.clothing-text__box2{
+    margin-bottom: 20px;
+}
+.clothing__subtitle {
+    font-family: "Core Sans C";
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.clothing__unit:not(:last-child) {
+    margin-bottom: 20px;
+}
+.clothing__bold {
+    font-weight: 700;
+}
+.see__more {
+    font-family: "Core Sans C";
+    font-weight: 600;
+}
+/* ================================= Latests projects =================================== */
+.latestprojects {
+    /* да я розумію, що властивості повторюються але вдруг цей блок я ще десь використаю */
+    font-family: "inter" , serif;
+    font-weight: 400;
+    color: #7D7D7D;
+    line-height: 1.46;
+    max-width: 1250px;
+    font-size: 18px;
+    margin: 0 auto;
+    padding: 0 15px;
+    margin-bottom: 100px;
+}
+.latestprojects__conatiner {
+    max-width: 1220px;
+     
+}
+.latestprojects__textbocks {
+max-width: 852px;
+margin: 0 auto;
+margin-bottom: 47px;
+}
+.latestprojects__logo {
+    text-align: center;
+    margin-bottom: 14px;
+}
+.latestprojects__sqear {
+    background: #40DDB6;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+}
+.latestprojects__logo-title {
+    color: #37393F;
+    font-weight: 500;
+    line-height: 1.22;
+    display: inline-block;
+     
+}
+.latestprojects__title {
+    color: #37393F;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.21;
+    font-family: "poppins" , serif;
+    margin-bottom: 14px;
+    text-align: center;
+}
+.latestprojects__unit p:not(:last-child){
+    margin-bottom: 15px;
+}
+.latestprojects__unit{
+    text-align: center;
+}
+
+.reviews__wrapper .wrapper__column:not(:last-child){
+    margin-bottom: 58px;
+}
+
+.wrapper__column{
+    font-size: 0;
+}
+
+
+.latestprojects__reviews {
+    max-width: 384px;
+    max-height: 582px;
+    display: inline-block;
+     
+}
+
+.latestprojects__reviews:not(:last-child){
+    margin-right: 34px;
+}
+ 
+
+.review {
+width: 384px;
+height: 500px;
+margin-bottom: 24px;
+}
+
+.reviewimg1{
+    background: url(../img/Image1.png) center / cover no-repeat;
+}
+.reviewimg2{
+    background: url(../img/Image2.png) center / cover no-repeat;
+}
+.reviewimg3{
+    background: url(../img/Image3.png) center / cover no-repeat;
+}
+.reviewimg4{
+    background: url(../img/Image4.png) center / cover no-repeat;
+}
+.reviewimg5{
+    background: url(../img/Image5.png) center / cover no-repeat;
+}
+.reviewimg6{
+    background: url(../img/Image6.png) center / cover no-repeat;
+}
+
+
+
+.review__subtitle {
+    color: #37393F;
+font-family: "Poppins" , serif;
+font-size: 20px;
+font-weight: 600;
+line-height: 1.27;
+margin-bottom: 15px;
+}
+.review__text-bocks {
+    font-size: 14px;
+    padding-right: 10px;
+    max-width: 350px;
+}
+
+.review__text-bocks p{
+min-height: 22px;
+padding-left: 25px;
+background: url(../img/icon3.svg) 0 0 no-repeat;
+}
+/* ==================================== Ephoriya ==================================== */
+.euphoria {
+    max-width: 1270px;
+    padding: 0 15px;
+    margin: 0 auto;
+    color: #FFF;
+    font-family: "Causten";
+    margin-bottom: 100px;
+}
+.euphoria__container {
+    max-width: 1240px;
+    font-size: 0;
+}
+.img__left {
+    vertical-align: middle;
+    display: inline-block;
+    max-width: 615px;
+    max-height: 640px;
+    background: url(../img/paporoti.png)  center / cover no-repeat;
+    padding: 183px 74px 174px;
+}
+
+ 
+
+.euphoria__title {
+    font-family: "Fontspring-coresansar85", serif;
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: 0.208px;
+    line-height: 1.47;
+    margin-bottom: 30px;
+}
+.euphoria__unit-box {
+    font-family: "Causten", serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+.euphoria__unit-box p:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.euphoria__button {
+    display: inline-block;
+    font-size: 18px;
+    font-family: "Causten", serif;
+    color: #3C4242;
+    font-weight: 600;
+    line-height: 1.5;
+    padding: 12px 44px; 
+    background-color: #FFFFFF;
+    border-radius: 8px;
+}
+.img__right {
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 615px;
+    max-width: 620px;
+    min-height: 640px;
+    background: url(../img/people.png)  center / cover no-repeat;
+}
+/* =============================== практика =================================================== */
+.practice{
+    margin: 0 auto;
+    width: 100%;
+    
+}
+.gg{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+    text-shadow: 2px 2px 5px rgb(54, 7, 7);
+    margin-bottom: 50px;
+}
+.poligon{
+    margin: 0 auto;
+    background: url(../img/1200_0_1659002031-9557.webp) 50% 0/ 250px  no-repeat , url(../img/armata.jpg) 50% 100% / 350px no-repeat,  url(../img/bomb.jpg) center / 250px no-repeat fixed,   url(../img/poligon.jpeg) center / cover no-repeat;
+
+    min-height: 1000px;
+}
+
+.tank{
+    margin: 0 auto;
+    background:  url(../img/bax.jpeg) 50% 100% / 400px no-repeat  ,  url(../img/poligon.jpeg) center / cover no-repeat;
+    min-height: 1000px;
+}
+.bax{
+    margin: 0 auto;
+    min-width: 100%;
+    min-height: 1000px;
+    background: url(../img/bababax.jpg) center / cover no-repeat ;
+}
