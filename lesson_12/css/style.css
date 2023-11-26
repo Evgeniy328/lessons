@@ -1,0 +1,333 @@
+ /* підключення файлу скидання стилів */
+@import url(reset.css);
+
+/* Підключення шрифтів */
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500&display=swap");
+
+
+
+/* ============================ Основні стилі ================================== */
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+    margin: 0 auto;
+}
+[class*="__container"]{
+max-width: 1250px;
+padding: 0 15px;
+margin: 0 auto;
+}
+
+/* ==================================================================================*/
+/* ============================ стилі для менюшки ================================== */
+.header {
+font-family: "inter";
+position: sticky;  
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50;
+}
+.header__container{
+    text-align: justify;
+    padding-top: 22px;
+    padding-bottom: 45px;
+    background-color: #fff;
+}
+.header__logo {
+display: inline-block;
+margin-right: 200px;
+margin-bottom: 10px;
+vertical-align: middle;
+}
+.menu-nav {
+    font-size: 0;
+    display: inline-block;
+    
+}
+.menu-nav--margin{
+    margin-right: 45px;
+}
+.menu-nav__item {
+    display: inline-block;
+    position: relative;
+    font-size: 18px;
+    color: #37393F;
+    transition: ease 0.3s all;
+}
+.menu-nav__item:not(:last-child){
+    margin-right: 35px;
+}
+.menu-nav__item::after{
+    content: "";
+    margin-top: 10px;
+    display: block;
+    background-color: #6B77E5;
+    width: 0%;
+    height: 2px;
+    transition: all 0.5s ease 0s;
+}
+.menu-nav__item:hover::after{
+    width: 100%;
+}
+.menu-nav__item:hover{
+    color: #6B77E5;
+}
+
+.menu-nav__link--after{
+    position: relative;
+}
+.menu-nav__link--after::after{
+    content: "";
+    position: absolute;
+    left: 65px;
+    top: 50%;
+    width: 10px;
+    height: 7px;
+    transform: translate(-100%, -50%);
+    background: url(../img/svg/Vector.svg) center / contain no-repeat;
+}
+
+
+.menu-nav__item--menu-sub{
+    position: relative;
+}
+
+.first-sub-menu {
+    position: absolute;
+    top: 100%;
+    left: -300%;
+    /* left: 0; */
+    padding-top: 5px;
+    color: #37393F;
+    width: 180px;
+    background-color: aqua;
+    padding: 10px;
+    border: 2px solid #37393F;
+    border-radius: 5px;
+    /* visibility: visible; */
+    visibility: hidden;
+    transition: ease 0.4s all;
+    opacity: 0;
+    /* opacity: 1; */
+}
+ 
+.menu-nav__item--menu-sub:hover .first-sub-menu{
+visibility: visible;
+left:0;
+opacity: 1;
+}
+
+ 
+.first-sub-menu__item, .second-sub-menu__item{
+    padding: 5px 0;
+}
+
+.first-sub-menu__item:hover{
+    color: #0040ff;
+}
+
+.second-sub-menu {
+    position: absolute;
+    top: 70%;
+    left: 250%;
+    padding-top: 5px;
+    color: #37393F;
+    width: 220px;
+    background-color: rgb(77, 255, 0);
+    padding: 10px;
+    border: 2px solid #37393F;
+    border-radius: 5px;
+    transition: ease 0.3s all;
+    opacity: 0;
+    visibility: hidden;
+}
+.first-sub-menu__item--menu-sub:hover .second-sub-menu{
+    opacity: 1;
+    visibility: visible;
+    left: 95%;
+}
+.second-sub-menu__item:hover .second-sub-menu__link{
+    text-decoration: underline;
+}
+
+.button{
+    display: inline-block;
+     
+    font-family: "Poppins";
+    font-size: 18px;
+    background-color: #6B77E5;
+    color: #fff;
+    transition: ease 0.3s all;
+}
+.button--get {
+    padding: 20px 33px;
+}
+.button:hover{
+    outline:  3px solid #6B77E5;
+    background-color: #fff;
+    color: #6B77E5;
+    border-radius: 5px;
+}
+span{
+    font-weight: 600;
+    color: rgb(250, 171, 74);
+}
+ 
+.pug-img{
+    visibility: hidden;
+    position: absolute;
+    top: 500%;
+    left: 20%;
+    width: 500px;
+    height: 500px;
+    z-index: 50;
+    transition: ease 0.8s all;
+}
+.pug-img img{
+    width: 100%;
+}
+.pug-button:hover .pug-img{
+    visibility: visible;
+    left: 20%;
+    top: 20%;
+    }
+/* ======================================================================================= */
+/* ====================================== стилі для карток ================================================== */
+.main {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    color: #7d7d7d;
+     
+}
+.main--margin{
+    margin-bottom: 50px;
+}
+.main__content {
+    font-size: 0;
+}
+ 
+.row-content--margin:not(:last-child){
+    margin-bottom: 30px;
+}
+ 
+.title-content {
+    position: relative;
+    display: inline-block;
+    
+    min-width: 386px;
+    min-height: 532px;
+    
+    
+}
+
+
+.title-content--margin:not(:last-child){
+    margin-right: 30px;
+}
+.title-content:hover .socials-network{
+    visibility: visible;
+    opacity: 1;
+}
+.title-content__img {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+}
+ 
+.socials-network {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(107, 119, 229, 0.70);
+    transition: ease 0.3s all;
+    visibility: hidden;
+    opacity: 0;
+}
+.network-socials{
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    margin-top: -25px;
+    width: 100%;
+    padding: 0 10px;
+}
+.socials-network__item {
+    display: inline-block;
+    width: 51px;
+    height: 51px;
+    transition: ease 0.3s all;
+}
+.socials-network__item img{
+    width: 100%;
+    border-radius: 50%;
+}
+.socials-network__item:not(:last-child){
+    margin-right: 13px;
+}
+.socials-network__item:hover{
+    outline: 3px solid #fff;
+    border-radius: 50%;
+}
+.socials-network__item img{
+    width: 100%;
+}
+.desc-card {
+    width: 100%;
+    position: absolute;
+    bottom: 22px;
+    left: 0;
+    padding: 0 22px;
+}
+.desc-card__content {
+     
+    background-color: #FFF;
+    text-align: center;
+    padding: 24px;
+}
+.desc-card__name {
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #37393F;
+}
+.desc-card__position {
+    font-size: 18px;
+    line-height: 1.35;
+}
+/* =============================== PRACTICE +++++++++++++++++++++++++++++++++++++++++= */
+ 
+.block {
+    width: 100%;
+}
+ 
+.first-title,
+.second-title,
+.third-title {
+    position: sticky;
+    top: 125px;
+    left: 0;
+    font-size: 25px;
+    color: #FFF;
+    text-align: center;
+   padding: 20px 0;
+} 
+
+.first-title--blue{
+background-color: blue;
+}
+ 
+.second-title--yellow {
+    background-color: yellow;
+}
+ 
+.third-title--red {
+    background-color: red;
+}
