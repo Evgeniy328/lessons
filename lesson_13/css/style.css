@@ -1,0 +1,690 @@
+ /* підключення файлу скидання стилів */
+@import url(reset.css);
+
+/* Підключення шрифтів */
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500&display=swap");
+
+
+
+/* ============================ Основні стилі ================================== */
+.wrapper {
+	overflow: clip;
+}
+[class*="__container"]{
+max-width: 1030px;
+padding: 0 15px;
+margin: 0 auto;
+}
+
+/* ==================================================================================*/
+/* ============================ стилі для карточок ================================== */
+
+ 
+.header {
+    padding: 50px 0;
+}
+ 
+.header__title {
+    text-align: center;
+    padding: 20px;
+    font-size: 35px;
+    font-weight: 700;
+    border: 4px solid red;
+    border-radius: 10px;
+}
+ 
+.main__container {
+    
+    max-width: 1100px;
+    
+}
+.main__content { 
+    font-size: 0;
+    border-color: aqua;
+    display: flex;
+    justify-content: center;
+}
+.main__content--margin:not(:last-child){
+    margin-bottom: 20px;
+}
+.row--margin:not(:last-child) {
+    margin-bottom: 20px;
+}
+.item {
+    padding: 10px;
+    min-width: 170px;
+    min-height: 150px;
+    display: inline-block;
+    border-radius: 10px;
+    outline:3px solid yellow;
+    background-color: rgba(0, 255, 213, 0.525);
+}
+.item--margin:not(:last-child){
+    margin-right: 20px;
+}
+
+.item__daughterly{
+    min-width: 150px;
+    min-height: 130px;
+    padding: 30px 10px;
+    text-align: center;
+    font-size: 20px;
+    background-color: blue;
+    border-radius: 10px;
+    transition: ease 0.3s all;
+   
+}
+
+.item__daughterly--translate:hover{
+    transform: translate(10px, 10px); 
+}
+
+.item__daughterly--scaleplus:hover{
+    transform: scale(0.5);
+}
+.item__daughterly--scaleminus:hover{
+    transform: scale(1.2);
+}
+.item__daughterly--rotateplus:hover{
+    transform: rotate(45deg);
+}
+.item__daughterly--rotateminus:hover{
+    transform: rotate(-45deg);
+}
+.item__daughterly--rotate360:hover{
+    transform: rotate(360deg);
+}
+.item__daughterly--skewleft:hover{
+    transform: skew(10deg);
+}
+.item__daughterly--skewright:hover{
+    transform:skew(-10deg);
+}
+.item__daughterly--rotateandorogin:hover{
+    transform: rotate(40deg);
+    transform-origin: 50% 0;
+}
+
+.item--perspective{
+    perspective: 150px
+}
+.item__daughterly--rotate3d:hover{
+    transform: rotate3d(30, 40, 40, 30deg);
+}
+.item__daughterly--rotate3d360:hover{
+    transform: rotate3d(40, 0, 0, 360deg);
+}
+.item__daughterly--rotate3d180:hover{
+    transform: rotate3d(0, 40, 0, 180deg);
+}
+/* =============================================================== */
+ 
+.flip__box {
+	position: relative;
+	width: 400px;
+	height: 250px;
+	perspective: 500px;
+}
+.flip__front,
+.flip__back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	transition: all 0.3s;
+}
+.flip__front {
+	background-image: url(../img/bitcoinback.png);
+	transform: rotateY(0deg);
+    background-size: 100%;
+
+	backface-visibility: hidden;
+}
+.flip__back {
+	background-image: url(../img/crypto-plastic.jpg);
+	transform: rotateY(-180deg);
+    background-size: 100%;
+
+}
+
+.flip__box:hover .flip__back {
+	transform: rotateY(0deg);
+}
+.flip__box:hover .flip__front {
+	transform: rotateY(180deg);
+}
+/* =============================TANK============================== */
+.footer {
+     
+    padding:300px 500px;
+}
+.tank{
+    position: relative;
+   
+}
+.tank__bashniya{
+    position: relative;
+    top: -98px;
+    left: 332px;
+    width: 300px;
+    height: 106px;
+    background-color: rgb(103, 103, 103);
+    border-radius: 41px 0 0 41px;
+    z-index: 5;
+}
+.bashniya__verh1{
+    position: absolute;
+    left: -70px;
+    top: 0px;
+    width: 200px;
+    height: 50px;
+    background-color: rgb(103, 103, 103);
+    transform: skew(104deg);
+    border-radius: 0px 0px 0px 139px;
+}
+.bashniya__verh2{
+    position: absolute;
+    left: -138px;
+    top: 46px;
+    width: 200px;
+    height: 62px;
+    background-color: rgb(103, 103, 103);
+    border-radius: 21px 0px 0px 21px;
+}
+.broniya__bashni {
+    position: absolute;
+    left: -163px;
+    top: 47px;
+    width: 25px;
+    height: 54px;
+    background-color: rgb(56, 56, 56);
+    border-radius: 9px 9px 9px 9px;
+}
+.zad__bashni{
+    position: absolute;
+    left: 299px;
+    top: 6px;
+    width: 69px;
+    height: 94px;
+    background-color: rgb(56, 56, 56);
+    border-radius: 0px 15px 28px 0px;
+}
+.liyk{
+    position: absolute;
+    left: 152px;
+    top: -29px;
+    width: 128px;
+    height: 30px;
+    background-color: rgb(56, 56, 56);
+    border-radius: 50% 50% 1px 0px;
+    transition: ease 0.4s all;
+}
+.lychku {
+    position: absolute;
+     
+    width: 20px;
+    height: 20px;
+    background-color: rgb(103, 103, 103);
+    border-radius: 50% 50% 1px 0px;
+    
+}
+.liychok1 {
+    left: -137px;
+    top: -41px;
+    z-index: 10;
+    transition: ease 0.4s all;
+}
+
+.liychok2 {
+    left: -92px;
+    top: -48px;
+    transition: ease 0.4s all;
+}
+.liychok3 {
+    left: -47px;
+    top: -42px;
+    z-index: 10;
+    transition: ease 0.4s all;
+}
+.hrest{
+    position: absolute;
+    top: 30px;
+    left: 70px;
+    z-index: 5;
+    width: 50px;
+    height: 50px;
+
+}
+
+.orel{
+    position: absolute;
+    top: 80px;
+    left: 479px;
+    z-index: 15;
+    width: 70px;
+    height: 70px;
+    
+}
+.dulo {
+    position: relative;
+    top: 53px;
+    left: -222px;
+    width: 59px;
+    height: 42px;
+    background-color: rgb(103, 103, 103);
+    border-radius: 9px 0px 0px 9px;
+     z-index: 15;
+}
+.dulo1 {
+    position: absolute;
+    top: 58px;
+    left: -394px;
+    width: 238px;
+    height: 33px;
+    background-color: rgb(56, 56, 56);
+    border-radius: 9px 0px 0px 9px;
+    z-index: 1;
+    transition: ease 0.4s all;
+}
+
+.dulo2 {
+    position: absolute;
+    top: 10px;
+    left: -408px;
+    width: 238px;
+    height: 25px;
+    background-color: rgb(103, 103, 103);
+    border-radius: 9px 0px 0px 9px;
+    z-index: 1;
+    transition: ease 0.4s all;
+}
+
+.dulo3 {
+    position: absolute;
+    top: 7px;
+    left: -422px;
+    width: 1px;
+    height: 1px;
+    border-radius: 9px 0px 0px 9px;
+    padding: 10px 3px;
+    border: 7px solid black;
+    z-index: 1;
+    transition: ease 0.4s all;
+}
+
+.dulo4 {
+    position: absolute;
+    top: 2px;
+    left: -481px;
+    width: 1px;
+    height: 1px;
+    border-radius: 9px 9px 9px 9px;
+    padding: 7px 17px;
+    border: 15px solid black;
+    z-index: 1;
+    transition: ease 0.4s all;
+}
+
+
+
+
+.tank__korpus{
+    top: -100px;
+    left: 0px;
+    position: relative;
+    perspective: 300px;
+    width: 800px;
+    height: 80px;
+    background-color: black;
+    transform: skew(330deg);
+    z-index: 5;
+}
+.sub__korpus{
+    position: absolute;
+    top: 64px;
+    left: 49px;
+    width: 825px;
+    height: 96px;
+    background-color: rgb(61, 60, 60);
+    z-index: 1;
+    transform: skew(18deg);
+}
+.tank__vuhlopna{
+    position: absolute;
+    top: -35px;
+    left: 802px;
+    width: 70px;
+    height: 115px;
+    transform: skew(330deg);
+    background-color: rgb(61, 60, 60);
+}
+.tank__broniya1,
+.tank__broniya2,
+.tank__broniya3,
+.tank__broniya4,
+.tank__broniya5{
+    width: 300px;
+    height: 70px;
+    background-color: rgb(103, 103, 103);
+    transform: rotate3d(40, 0, 0, 4deg);
+    position: absolute;
+    z-index: 5;
+}
+.tank__broniya1{
+    top: 32px;
+    left: -4px;
+    
+}
+.tank__broniya2{
+    height: 100px;
+    top: 46px;
+    left: 300px;
+}
+.tank__broniya3{
+    width: 181px;
+    height: 100px;
+    top: 46px;
+    left: 604px;
+}
+.tank__broniya4{
+    width: 17px;
+    height: 105px;
+    top: 9px;
+    left: -40px;
+    transform: rotate(50deg);
+}
+.tank__broniya5{
+    width: 11px;
+    height: 215px;
+    top: -12px;
+    left: 870px;
+    transform: rotate(294deg);
+}
+.tank__xodova{
+    position: absolute;
+    top: -6px;
+    left: -7px;
+     
+}
+    
+.tank__xodova1{
+    position: absolute;
+    top: 150px;
+    left: -123px;
+    width: 278px;
+    height: 119px;
+    background-color: rgb(68, 70, 70);
+    border-radius: 60px;
+    transform: rotate(15deg);
+    outline: 9.5px dashed rgb(26, 26, 26);
+    border: 8px solid rgb(26, 26, 26);
+    z-index: 5;
+}
+.tank__xodova2{
+    top: 172px;
+    left: 77px;
+    position: absolute;
+    height: 119px;
+    width: 800px;
+    background-color: rgb(68, 70, 70);
+    border-radius: 60px;
+    outline: 9.5px dashed rgb(26, 26, 26);
+    border: 8px solid rgb(26, 26, 26);
+    z-index: 5;
+}
+.katok{
+    position: relative;
+    
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    background-color: rgb(143, 143, 143);
+    z-index: 20;
+    padding: 30px;
+    outline: 4px solid black;
+    transition: ease 0.4s all;
+}
+.val{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgb(109, 109, 109);
+    padding: 20px;
+    border: 2px solid rgb(109, 109, 109);
+    outline: 4px solid black;
+}
+.sub__val{
+    position: absolute;
+    top: 8px;
+    left: 7px;
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: rgb(10, 10, 10);
+    padding: 10px;
+
+}
+.bolts{
+    position: absolute;
+    top: 23px;
+    left: 22px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    outline: 9px dotted rgb(26, 26, 26);
+}
+
+.katok--position1{
+    top: 180px;
+    left: 59px;
+}
+.katok--position2{
+    top: 74px;
+    left: 210px;
+}
+
+.katok--position3{
+    top: -31px;
+    left: 354px;
+}
+.katok--position4{
+    top: -135px;
+    left: 513px;
+}
+
+.katok--position5{
+    top: -241px;
+    left: 674px;
+}
+/* =============vedushiy katok====================== */
+.katok-veduchiy {
+    position: relative;
+     
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    
+    z-index: 20;
+    padding: 30px;
+    border: 8px solid black;
+    outline: 15px dashed black;
+    transition: ease 0.4s all;
+}
+.katok-veduchiy--position1 {
+    left: -101px;
+    top: -377px;
+}
+.katok-veduchiy--position2{
+    left: 777px;
+    top: -422px;
+    z-index: 5;
+}
+.dusk-katka {
+    position: relative;
+    top: -10px;
+    left: -10px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgb(10, 10, 10);
+    padding: 15px;
+     
+}
+.shpucia{
+    position: absolute;
+    left: 10px;
+    top: -29px;
+    width: 8px;
+    height: 80px;
+    border-radius: 25px;
+    background-color: rgb(10, 10, 10);
+}
+
+.dusk-katka__val1 {
+    transform: rotate(45deg);
+}
+.dusk-katka__val2 {
+    transform: rotate(-45deg);
+}
+.dusk-katka__val3 {
+    transform: rotate(90deg);
+}
+/* =================== задній каток =========================== */
+.katok-zadniy {
+    position: relative;
+    
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    background-color: rgb(143, 143, 143);
+    z-index: 20;
+    padding: 30px;
+    outline: 4px solid black;
+    z-index: 10;
+    transition: ease 0.4s all;
+}
+.katok-zadniy--position1 {
+    top: -516px;
+    left: 591px;
+    transform: rotate(160deg);
+}
+.katok-zadniy--position2 {
+    top: -621px;
+    left: 433px;
+    transform: rotate(150deg);
+}
+.katok-zadniy--position3 {
+    top: -729px;
+    left: 280px;
+    transform: rotate(90deg);
+}
+.katok-zadniy--position4 {
+    top: -832px;
+    left: 136px;
+    transform: rotate(60deg);
+}
+
+.katok-zadniy--position5 {
+    top: -956px;
+    left: -28px;
+    transform: rotate(30deg);
+}
+.katok-zadniy__bolts {
+    outline: 36px dashed rgb(118, 118, 118);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    top: 35px;
+    left: 37px;
+    position: absolute;
+}
+.katok-zadniy__val {
+    position: absolute;
+    top: 0px;
+    left: -5px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(109, 109, 109);
+    padding: 10px;
+    border: 2px solid rgb(109, 109, 109);
+    outline: 4px solid black;
+}
+/* ===========спроба анцімації)===================== */
+.footer:hover .liyk{
+    
+    transform: rotate(91deg);
+    transform-origin: 120px 20px;
+}
+.footer:hover .liychok1{
+    left: -137px;
+    top: -26px;
+    transform: rotate(91deg);
+    transform-origin: 120px 20px;
+}
+.footer:hover .liychok2{
+    left: -137px;
+    top: 23px;
+    transform: rotate(91deg);
+    transform-origin: 120px 20px;
+}
+.footer:hover .liychok3{
+    left: -142px;
+    top: 66px;
+    transform: rotate(91deg);
+    transform-origin: 120px 20px;
+}
+/* ============================================ */
+.footer:hover .dulo1{
+    left: -349px;
+    width: 210px;
+}
+.footer:hover .dulo2{
+    left: -363px;
+     
+}
+.footer:hover .dulo3{
+    left: -377px;
+     
+}
+.footer:hover .dulo4{
+    left: -436px;
+     
+}
+.soldat{
+    position: absolute;
+    top: -108px;
+    left: 496px;
+    width: 94px;
+    height: 117px;
+    z-index: 1;
+    transition: ease 0.3s all;
+}
+
+.footer:hover .soldat{
+    top: -208px;
+}
+
+.footer:hover .katok-veduchiy{
+    transform: rotate(-360deg);
+}
+.footer:hover .katok{
+    transform: rotate(-360deg);
+}
+.footer:hover .katok-zadniy{
+    transform: rotate(-360deg);
+}
+.audio{
+    position: relative;
+    top: 118px;
+    left: 290px;
+}
