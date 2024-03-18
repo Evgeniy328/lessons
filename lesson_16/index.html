@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>lesson_16</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header header--fix">
+            <div class="header__container">
+                <div class="header__box-content">
+                    <a href="#!" class="logo">
+                        <img src="img/svg/Logo.svg" alt="logo">
+                    </a>
+                    <form id="some-form-header" enctype="multipart/form-data" method="GET" class="form" action="#">
+                        <div class="form-container">
+                            <img class="searchicon" src="img/svg/search-icon.svg" alt="searchIcon">
+                            <input class=" input-search" autocomplete="off" name="search" type="search"
+                                placeholder="Search">
+                        </div>
+                    </form>
+                    <div class="choice-language">
+                        <div class="choice-language__menu">
+                            <div class="choice-language__text">English (united States)</div>
+                        </div>
+                        <ul class="choice-language__list">
+                            <li class="choice-language__item"><a href="#!">English (united States)</a></li>
+                            <li class="choice-language__item"><a href="#!">Ukraine (кирилиця)</a></li>
+                            <li class="choice-language__item"><a href="#!">Poland (polska)</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header__buttons">
+                    <a href="#!" class="header__button button">Login</a>
+                    <a href="#!" class="header__button button">Sign Up</a>
+                </div>
+            </div>
+        </header>
+        <main class="page">
+            <section class="info">
+                <div class="info__container">
+                    <h2 class="info__title">My Info</h2>
+                    <h4 class="info__subtitle">Add Address</h4>
+                
+                    <form action="#" class="info-form form-info" method="get" enctype="multipart/form-data">
+                        <div class="form-info__body">
+                            <div class="form-info__block">
+                                <label for="firstname" class="form-info__title">First Name*</label>
+                                <input id="firstname" name="firstname" class="form-info__item" autocomplete="on"
+                                    placeholder="First Name" type="text">
+                            </div>
+                            <div class="form-info__block">
+                                <label for="lastname" class="form-info__title">Last Name*</label>
+                                <input id="lastname" name="lastname" class="form-info__item" autocomplete="on"
+                                    placeholder="Last Name" type="text" required>
+                            </div>
+                            <div class="form-info__block">
+                                <label for="country" class="form-info__title">Country / Region*</label>
+                                <input id="country" name="country" class="form-info__item" autocomplete="on"
+                                    placeholder="Country / Region" type="text" required>
+                            </div>
+                            <div class="form-info__block">
+                                <label for="company" class="form-info__title">Company Name</label>
+                                <input id="company" name="company" class="form-info__item" autocomplete="on"
+                                    placeholder="Company (optional)" type="text">
+                            </div>
+                            <div class="form-info__block">
+                                <label for="street" class="form-info__title">Street Address*</label>
+                                <input id="street" name="street" class="form-info__item" autocomplete="on"
+                                    placeholder="House number and street name" type="text" required>
+                            </div>
+                            <div class="form-info__block">
+                                <label for="apartment" class="form-info__title">Apt, suite, unit</label>
+                                <input id="apartment" name="apartment" class="form-info__item" autocomplete="on"
+                                    placeholder="apartment, suite, unit, etc. (optional)" type="text">
+                            </div>
+                            <div class="form-info__block">
+                                <label for="city" class="form-info__title">City*</label>
+                                <input id="city" name="city" class="form-info__item" autocomplete="on"
+                                    placeholder="Town / City" type="text" required>
+                            </div>
+                            <div class="form-info__block">
+                                <label for="state" class="form-info__title">State*</label>
+                                <div class="form-info__block--before">
+                                    <select id="state" name="state" class="form-info__item form-info__item-select" autocomplete="on" placeholder="State"
+                                    type="text" required>
+                                        <option value="state">State</option>
+                                        <option value="newyork">New York</option>
+                                        <option value="texas">Tehas</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-info__block">
+                                <label for="phone" class="form-info__title">Phone*</label>
+                                <input id="phone" name="phone" class="form-info__item" autocomplete="on"
+                                    placeholder="Phone" type="tel" required>
+                            </div>
+                            <div class="form-info__block">
+                                <label for="postcode" class="form-info__title">Postal Code*</label>
+                                <input id="postcode" name="postcode" class="form-info__item" autocomplete="on"
+                                    placeholder="Postal Code" type="text" required>
+                            </div>
+                            <div class="form-info__block">
+                                <label for="delivery" class="form-info__title">Delivery Instruction</label>
+                                <textarea id="delivery" name="delivery" class="form-info__item form-info__item--textarea" autocomplete="off"
+                                placeholder="Delivery Instruction" type="text"></textarea>
+                            </div>
+                        </div>
+                        <div class="info__checkbox checkbox">
+                            <div class="checkbox__group">
+                                <input id="default-shipping-address" class="checkbox__item" type="checkbox" name="default-shipping-address" value="set">
+                                <label for="default-shipping-address" class="checkbox__title">
+									Set as default shipping address
+								</label>
+                            </div>
+                            <div class="checkbox__group">
+                                <input id="default-billing-address" class="checkbox__item" type="checkbox" name="default-billing-address" value="set">
+                                <label for="default-billing-address" class="checkbox__title">
+									Set as default billing address
+								</label>
+                            </div>
+                        </div>
+                        <div class="info__buttons">
+                            <button class="button-info button--fiolet">Save</button>
+                            <button class="button-info button--grey">Cansel</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section class="checkout">
+                <div class="checkout__container">
+                    <h2 class="checkout__title">Check Out</h2>
+                    <h3 class="checkout__subtitle">Billing Details</h3>
+                    <form action="#" class="checkout-form form-checkout" method="get" enctype="multipart/form-data">
+                        <div class="form-container form-container--row">
+                            <div class="form__flex-block">
+                                <label class="form__label" for="first-name">First Name* </label>
+                                <input class="form__input" autocomplete="on" name="first-name" type="text" id="first-name" placeholder="First Name" required>
+                            </div>
+                            <div class="form__flex-block">
+                                <label class="form__label" for="last-name">Last Name* </label>
+                                <input class="form__input" autocomplete="on" name="last-name" type="text" id="last-name" placeholder="Last Name" required>
+                            </div>
+                            <div class="form__flex-block">
+                                <label class="form__label" for="country-region">Country / Region* </label>
+                                <input class="form__input" autocomplete="on" name="country-region" type="text" id="country-region" placeholder="Country / Region" required>
+                            </div>
+                            <div class="form__flex-block">
+                                <label class="form__label" for="company-name">Company Name </label>
+                                <input class="form__input" autocomplete="on" name="company-name" type="text" id="company-name" placeholder="Company (optional)" required>
+                            </div>
+                            <div class="form__flex-block">
+                                <label class="form__label" for="street-adress">Street Address*</label>
+                                <input class="form__input" autocomplete="on" name="street-adress" type="text" id="street-adress" placeholder="House number and street name" required>
+                            </div>
+                            <div class="form__flex-block">
+                                <label class="form__label" for="apartament">Apt, suite, unit</label>
+                                <input class="form__input" aautocomplete="on" name="apartament" type="text" id="apartament" placeholder="apartment, suite, unit, etc. (optional)" required>
+                            </div>
+                        </div>
+                        <div class="form-conatiner form-conatiner--flex-3column form-conatiner--margin">
+                            <div class="form-flex-block2">
+                                <label for="city" class="form__label">City*</label>
+                                <input id="city" name="city" class="form__input" autocomplete="on"
+                                    placeholder="Town / City" type="text" required>
+                            </div>
+                            <div class="form-flex-block2">
+                                <label for="state" class="form__label">State*</label>
+                                <div class="form__input  form__input--before">
+                                    <select id="state" name="state" class="form__input-select" autocomplete="on" placeholder="State"
+                                    type="text" required>
+                                        <option value="state">State</option>
+                                        <option value="newyork">New York</option>
+                                        <option value="texas">Tehas</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-flex-block2">
+                                <label for="postcode" class="form__label">Postal Code*</label>
+                                <input id="postcode" name="postcode" class="form__input" autocomplete="on"
+                                    placeholder="Postal Code" type="text" required>
+                            </div>
+                        </div>
+                        <div class="form-container form-container--margin2">
+                            <div class="form__flex-block">
+                                <label for="phone" class="form__label form__label--phone">Phone*</label>
+                                <input id="phone" name="phone" class="form-info__item" autocomplete="on"
+                                placeholder="Phone" type="tel" required>
+                            </div>
+                        </div>
+                        <button class="delivery-button">Continue to delivery</button>
+                        <div class="checkbox__group">
+                            <input id="Save-my-information" class="checkbox__item checkbox__item--fontsize" type="checkbox" name="Save-my-information" value="set">
+                            <label for="Save-my-information" class="checkbox__title">
+                                Save my information for a faster checkout
+                            </label>
+                        </div>
+                    </form>
+                    <div class="greyline2"></div>
+                    <form action="#" class="shippnig-adress" method="get" enctype="multipart/form-data">
+                        <h3 class="checkout__subtitle checkout__subtitle--margin">Shipping Address</h3>
+                        <div class="someonetext">
+                            <p>Select the address that matches your card or payment method.</p>
+                        </div>
+                        <div class="radio-container">
+                            <div class="radio-group">
+                                <input id="sameaddress" class="radio__item" type="radio" name="shipping-address" value="same" checked="">
+                                <label for="sameaddress" class="radio__title radio__title-text">
+                                    Same as Billing address
+                                </label>
+                            </div>
+                            <div class="greyline"></div>
+                            <div class="radio__group">
+                                <input id="differentaddress" class="radio__item" type="radio" name="shipping-address" value="different" checked="">
+                                <label for="differentaddress" class="radio__title radio__title-text">
+                                    Use a different shipping address
+                                </label>
+                            </div>
+                        </div>
+                        <div class="greyline2"></div>
+                        <h3 class="checkout__subtitle checkout__subtitle--margin2">Shipping Method</h3>
+                        <div class="radio-container">
+                            <div class="radio-group">
+                                <label for="same-shipping-address" class="radio__title-text">
+                                    Arrives by Monday, June 7
+                                </label>
+                            </div>
+                            <div class="greyline"></div>
+                            <div class="radio__group">
+                                <label for="different-shipping-address" class="radio__title-text">
+                                    <div class="flex-text">
+                                        <div class="first-text">Delivery Charges</div>
+                                        <div class="sexond-text">$5.00</div>
+                                    </div>
+                                    <div class="someonetext">
+                                        <p>Select the address that matches your card or payment method.</p>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="greyline2"></div>
+                    <h3 class="checkout__subtitle checkout__subtitle--margin">Payment Method</h3>
+                    <div class="someonetext">
+                        <p>All transactions are secure and encrypted.</p>
+                    </div>
+                    <form action="#" class="paymentmethod" method="get" enctype="multipart/form-data">
+                        <div class="paymentmethod-container">
+                            <div class="paymentmethod-group">
+                                <div class="radio-group radio-group--margin">
+                                    <input id="creditcard" class="radio__item" type="radio" name="paymethod" value="creditcard" checked="">
+                                    <label for="creditcard" class="radio__title radio__title-text radio__title--position radio__title--margin">
+                                        Credit Card
+                                    </label>
+                                    <div class="someonetext">
+                                        <p>We accept all major credit cards.</p>
+                                    </div>
+                                </div>
+                                <div class="imggroup">
+                                    <div class="imggroup__img"><img src="img/typemethod/01.svg" alt="01"></div>
+                                    <div class="imggroup__img"><img src="img/typemethod/02.svg" alt="02"></div>
+                                    <div class="imggroup__img"><img src="img/typemethod/03.svg" alt="03"></div>
+                                    <div class="imggroup__img"><img src="img/typemethod/04.svg" alt="04"></div>
+                                </div>
+                                <div class="card-content">
+                                    <div class="card__info">
+                                        <input class="card__item" type="tel" name="card-number" placeholder="Card number" required="">
+                                    </div>
+                                    <div class="card__info">
+                                        <input class="card__item" type="text" name="name-of-card" placeholder="Name of card" required="">
+                                    </div>
+                                    <div class="card__info">
+                                        <input class="card__item" type="text" name="expiration-date" placeholder="Expiration date (MM/YY)" required="">
+                                    </div>
+                                    <div class="card__info card__info--button">
+                                        <input class="card__item card__item--button" type="password" name="security-code" placeholder="Security Code" required="">
+                                        <button class="card__button" type="button">
+                                        </button>
+                                    </div>
+                                </div>
+                                 
+                            </div>
+                            <div class="greyline"></div>
+                            <div class="paymentmethod-group paymentmethod-group--nopading">
+                                <div class="radio-group radio-group--margin">
+                                    <input id="cash" class="radio__item" type="radio" name="paymethod" value="cash" checked="">
+                                    <label for="cash" class="radio__title radio__title-text radio__title--position radio__title--margin">
+                                        Cash on delivery
+                                    </label>
+                                    <div class="someonetext">
+                                        <p>Pay with cash upon delivery.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="greyline"></div>
+                            <div class="paymentmethod-group paymentmethod-group--nopading">
+                                <div class="radio-group">
+                                    <input id="paypal" class="radio__item" type="radio" name="paymethod" value="paypal" checked="">
+                                    <label for="paypal" class="radio__title radio__title-text radio__title--position2  ">
+                                        Paypal
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="delivery-button">Pay Now</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+
+        </footer>
+    </div>
+</body>
+
+</html>
