@@ -1,0 +1,150 @@
+// обнулення стилів
+@import "_reset.scss";
+
+// Fonts 
+@import "fonts";
+
+ 
+.header {
+    margin-bottom: 100px;
+		&__container {
+            
+            margin-bottom: 100px;
+		}
+
+		&__title {
+            background-color: aqua;
+            color: black;
+            text-align: center;
+            padding: 20px;
+            font-size: 35px;
+            font-family: "Merriweather";
+            font-weight: 700;
+             transition: all 0.3s;
+            &:hover{
+                 color: rgb(239, 239, 239);
+            }
+		}
+}
+
+
+// main ==============================
+.main {
+
+		&__container {
+            max-width: 1210px;
+            padding: 0 15px;
+            margin: 0 auto;
+		}
+}
+.jewellerysection {
+    
+    display: flex;
+    justify-content: space-between;
+		&__text {
+            max-width: 577px;
+            flex: 0 1 577;
+            flex-direction: column;
+		}
+
+		&__imgs {
+            display: flex;
+            justify-content: space-between;
+            column-gap: 32px;
+		}
+}
+.text-jewellery {
+    position: relative;
+    top: 35px;
+		&__title {
+            color: #0e333d;
+    font-size: 78px;
+    font-family: "DM Serif Text", serif;
+    font-weight: 700;
+    line-height: 1.27;
+    text-transform: capitalize;
+    margin-bottom: 32px;
+     transition: all 0.3s;
+    &:hover{
+         color: #245f6f;
+    }
+		}
+
+		&__sub-title {
+            color: #727272;
+    font-size: 22px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 48px;
+
+    p:not(:last-child){
+        margin-bottom: 15px;
+
+    }
+		}
+
+		.text-jewellery {
+
+		&__box-buttons {
+		}
+}
+.button-black {
+    font-family: "DM Serif Text", serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1;
+    padding: 17px 37px;
+    margin-right: 47px;
+    background-color: #0e333d;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: capitalize;
+    transition: all 0.3s;
+     &:hover {
+        box-shadow: 0 1px 5px 1px gray;
+        background-color: rgb(14, 51, 61, 0.9);
+      }
+}
+.button-underline {
+    color: #0e333d;
+    font-size: 28px;
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    line-height: 1;
+    text-decoration: underline;
+    text-transform: capitalize;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    &:hover {
+        text-shadow: 1px 1px 5px #00000044;
+      }
+}
+
+}
+
+.image {
+ 
+		&__left {
+            width: 100%;
+            position: relative;
+            top: 35px;
+             transition: all 0.3s;
+		}
+
+		&__right {
+            position: relative;
+            bottom: 35px;
+             width: 100%;
+              transition: all 0.3s;
+            
+		}
+        &:hover{
+            .image__left{
+                top: 0px;
+            }
+            .image__right{
+                bottom: 0px;
+            }
+        }
+}

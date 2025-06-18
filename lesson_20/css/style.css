@@ -1,0 +1,219 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Merriweather:regular,700,700italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Infant:500,600,700,700italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  line-height: 1;
+  height: 100%;
+}
+
+/* FORM */
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button {
+  color: inherit;
+  background-color: transparent;
+}
+
+button,
+select,
+option {
+  cursor: pointer;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Підключення вручну */
+.header {
+  margin-bottom: 100px;
+}
+.header__container {
+  margin-bottom: 100px;
+}
+.header__title {
+  background-color: aqua;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  font-size: 35px;
+  font-family: "Merriweather";
+  font-weight: 700;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.header__title:hover {
+  color: rgb(239, 239, 239);
+}
+
+.main__container {
+  max-width: 1210px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.jewellerysection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.jewellerysection__text {
+  max-width: 577px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 577;
+          flex: 0 1 577;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.jewellerysection__imgs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 32px;
+     -moz-column-gap: 32px;
+          column-gap: 32px;
+}
+
+.text-jewellery {
+  position: relative;
+  top: 35px;
+}
+.text-jewellery__title {
+  color: #0e333d;
+  font-size: 78px;
+  font-family: "DM Serif Text", serif;
+  font-weight: 700;
+  line-height: 1.27;
+  text-transform: capitalize;
+  margin-bottom: 32px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.text-jewellery__title:hover {
+  color: #245f6f;
+}
+.text-jewellery__sub-title {
+  color: #727272;
+  font-size: 22px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 48px;
+}
+.text-jewellery__sub-title p:not(:last-child) {
+  margin-bottom: 15px;
+}
+.text-jewellery .button-black {
+  font-family: "DM Serif Text", serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1;
+  padding: 17px 37px;
+  margin-right: 47px;
+  background-color: #0e333d;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: capitalize;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.text-jewellery .button-black:hover {
+  -webkit-box-shadow: 0 1px 5px 1px gray;
+          box-shadow: 0 1px 5px 1px gray;
+  background-color: rgba(14, 51, 61, 0.9);
+}
+.text-jewellery .button-underline {
+  color: #0e333d;
+  font-size: 28px;
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  line-height: 1;
+  text-decoration: underline;
+  text-transform: capitalize;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.text-jewellery .button-underline:hover {
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2666666667);
+}
+
+.image__left {
+  width: 100%;
+  position: relative;
+  top: 35px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.image__right {
+  position: relative;
+  bottom: 35px;
+  width: 100%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.image:hover .image__left {
+  top: 0px;
+}
+.image:hover .image__right {
+  bottom: 0px;
+}
