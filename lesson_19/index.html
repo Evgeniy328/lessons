@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+		<title>Lesson 19</title>
+	</head>
+	<body>
+        <div class="wrapper">
+            <header class="header"></header>
+            <main class="page">
+                <div class="practice">
+                    <div class="practice__wrapper">
+                        <div class="practice-grid grid ">
+                            <h1 class="lesson">lesson 19</h1>
+                            <h2 class="practice-grid__title">
+                                grid
+                            </h2>
+                            <!-- ================================== -->
+                            <div class="grid-block">
+                                <h4 class="grid-block__title">Властивість .grid-контейнера
+                                (display: grid)</h4> 
+                                <div class="grid-elements grid-construction-first">
+                                    <div class="grid-box">grid-box: 1</div>
+                                    <div class="grid-box">grid-box: 2</div>
+                                    <div class="grid-box">grid-box: 3</div>
+                                    <div class="grid-box">grid-box: 4</div>
+                                    <div class="grid-box">grid-box: 5</div>
+                                </div>
+                            </div>
+                            <!-- ================================== -->
+                            <div class="grid-block">
+                                <h4 class="grid-block__title">Властивість .grid-контейнера (display: inline-grid;)</h4> 
+                                <div class="grid-elements grid-construction-second">
+                                    <div class="grid-box">grid-box: 1</div>
+                                    <div class="grid-box">grid-box: 2</div>
+                                    <div class="grid-box">grid-box: 3</div>
+                                    <div class="grid-box">grid-box: 4</div>
+                                    <div class="grid-box">grid-box: 5</div>
+                                </div>
+                                <img class="image01" src="img/backgroundLesson19.jpg" alt="bc">
+                            </div>
+                            <!-- ================================== -->
+                              <div class="grid-block">
+                                 <h3 class="grid-block__firsttitle">Властивість grid-template-columns</h3>
+                                <h4 class="grid-block__title">display: grid;grid-template-columns: 10% 30% 10%</h4> 
+                                <div class="grid-elements grid-construction-thirth">
+                                    <div class="grid-box">grid-box: 1</div>
+                                    <div class="grid-box">grid-box: 2</div>
+                                    <div class="grid-box">grid-box: 3</div>
+                                    <div class="grid-box">grid-box: 4</div>
+                                    <div class="grid-box">grid-box: 5</div>
+                                    <div class="grid-box">grid-box: 6</div>
+                                </div>
+                              </div>
+                             
+                                <!-- ======= -->
+                                  <div class="grid-block">
+                                        <h3 class="grid-block__firsttitle">Те саме тільки в px</h3>
+                                    <h4 class="grid-block__title">display: grid;grid-template-columns: 300px 600px 150px</h4> 
+                                    <div class="grid-elements grid-construction-fourth">
+                                        <div class="grid-box">grid-box: 1</div>
+                                        <div class="grid-box">grid-box: 2</div>
+                                        <div class="grid-box">grid-box: 3</div>
+                                        <div class="grid-box">grid-box: 4</div>
+                                        <div class="grid-box">grid-box: 5</div>
+                                        <div class="grid-box">grid-box: 6</div>
+                                    </div>
+                                  </div>
+                                
+                                <!-- ======= -->
+                                <div class="grid-block">
+                                        <h3 class="grid-block__firsttitle">Те саме тількив fr</h3>
+                                    <h4 class="grid-block__title">display: grid;grid-template-columns: 1.5fr 3fr 4.5fr;</h4> 
+                                    <div class="grid-elements grid-construction-fifth">
+                                        <div class="grid-box">grid-box: 1</div>
+                                        <div class="grid-box">grid-box: 2</div>
+                                        <div class="grid-box">grid-box: 3</div>
+                                        <div class="grid-box">grid-box: 4</div>
+                                        <div class="grid-box">grid-box: 5</div>
+                                        <div class="grid-box">grid-box: 6</div>
+                                    </div>
+                                </div>
+                                <!-- ======= -->
+                                 <div class="grid-block">
+                                    <h3 class="grid-block__firsttitle">Команда repeat</h3>
+                                    <h4 class="grid-block__title">display: grid;grid-template-columns: repeat(3, 33.333%);</h4> 
+                                    <span class="span">І виходять ідеально рівні колонки</span>
+                                    <div class="grid-elements grid-construction-sixth">
+                                        <div class="grid-box">grid-box: 1</div>
+                                        <div class="grid-box">grid-box: 2</div>
+                                        <div class="grid-box">grid-box: 3</div>
+                                        <div class="grid-box">grid-box: 4</div>
+                                        <div class="grid-box">grid-box: 5</div>
+                                        <div class="grid-box">grid-box: 6</div>
+                                    </div>
+                                 </div>
+                                 <!-- ======= -->
+                                 <div class="grid-block">
+                                    <h3 class="grid-block__firsttitle">параметр min-max</h3>
+                                    <h4 class="grid-block__title">display: grid;
+grid-template-columns: minmax(200px,300px) minmax(100px,200px) minmax(250px,150px);</h4> 
+                                    <div class="grid-elements grid-construction-seventh">
+                                        <div class="grid-box">grid-box: 1</div>
+                                        <div class="grid-box">grid-box: 2</div>
+                                        <div class="grid-box">grid-box: 3</div>
+                                        <div class="grid-box">grid-box: 4</div>
+                                        <div class="grid-box">grid-box: 5</div>
+                                        <div class="grid-box">grid-box: 6</div>
+                                    </div>
+                                 </div>
+                                  <!-- ======= -->
+                                 <div class="grid-block">
+                                    <h3 class="grid-block__firsttitle">параметр autofil</h3>
+                                    <h4 class="grid-block__title">display: grid;
+grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));</h4> 
+                                    <div class="grid-elements grid-construction-eigth">
+                                        <div class="grid-box">grid-box: 1</div>
+                                        <div class="grid-box">grid-box: 2</div>
+                                        <div class="grid-box">grid-box: 3</div>
+                                        <div class="grid-box">grid-box: 4</div>
+                                        <div class="grid-box">grid-box: 5</div>
+                                        <div class="grid-box">grid-box: 6</div>
+                                    </div>
+                                 </div>
+                                  <!-- ======= -->
+                                 <div class="grid-block">
+                                    <h3 class="grid-block__firsttitle">auto-fit - враховує наявність всіх елементів; якщо елементів менше, то сітка розтягнеться; при збільшені ширини контейнера елементи розтягнуться заповнюючи весь контейнер > 200px.
+
+Властивість .grid-контейнера</h3>
+                                    <h4 class="grid-block__title">display: grid;
+width: 2000px;
+grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));</h4> 
+                                    <div class="grid-elements grid-construction-eigth width">
+                                        <div class="grid-box">grid-box: 1</div>
+                                        <div class="grid-box">grid-box: 2</div>
+                                        <div class="grid-box">grid-box: 3</div>
+                                        <div class="grid-box">grid-box: 4</div>
+                                        <div class="grid-box">grid-box: 5</div>
+                                        <div class="grid-box">grid-box: 6</div>
+                                    </div>
+                                 </div>
+                                 <!-- ======= -->
+                                 <div class="grid-block">
+                                    <h3 class="grid-block__firsttitle">Властивість grid-template-rows</h3>
+                                    <h4 class="grid-block__title">Властивість .grid-контейнера
+(display: grid;
+grid-template-columns: 1.5fr 3fr 4.5fr;
+grid-template-rows: 40% 60%;)</h4> 
+                                    <div class="grid-elements grid-construction-nineth">
+                                        <div class="grid-box">grid-box: 1</div>
+                                        <div class="grid-box">grid-box: 2</div>
+                                        <div class="grid-box">grid-box: 3</div>
+                                        <div class="grid-box">grid-box: 4</div>
+                                        <div class="grid-box">grid-box: 5</div>
+                                        <div class="grid-box">grid-box: 6</div>
+                                    </div>
+                                 </div>
+                                 <!-- ======= -->
+                                 <div class="grid-block">
+                                    <h4 class="grid-block__title">Те саме тільки з PX .grid-контейнера
+(display: grid;
+grid-template-columns: 1.5fr 3fr 4.5fr;
+grid-template-rows:50px 200px 100px;)</h4> 
+                                    <div class="grid-elements grid-construction-tenth">
+                                        <div class="grid-box">grid-box: 1</div>
+                                        <div class="grid-box">grid-box: 2</div>
+                                        <div class="grid-box">grid-box: 3</div>
+                                        <div class="grid-box">grid-box: 4</div>
+                                        <div class="grid-box">grid-box: 5</div>
+                                        <div class="grid-box">grid-box: 6</div>
+                                    </div>
+                                 </div>
+                                  <!-- ======= -->
+                                 <div class="grid-block">
+                                    <h4 class="grid-block__title">А тепер спробуємо з fr .grid-контейнера
+(display: grid;
+grid-template-columns: 1.5fr 3fr 4.5fr;
+grid-template-rows: 2fr 1fr 1fr;)</h4> 
+                                    <div class="grid-elements grid-construction-eleventh">
+                                        <div class="grid-box">grid-box: 1</div>
+                                        <div class="grid-box">grid-box: 2</div>
+                                        <div class="grid-box">grid-box: 3</div>
+                                        <div class="grid-box">grid-box: 4</div>
+                                        <div class="grid-box">grid-box: 5</div>
+                                        <div class="grid-box">grid-box: 6</div>
+                                    </div>
+                                 </div>
+                                 <!-- ======= -->
+                                 <div class="grid-block">
+                                    <h4 class="grid-block__title">А якщо додати "repeat" .grid-контейнера
+(display: grid;
+grid-template-columns: 1.5fr 3fr 4.5fr;
+grid-template-rows: repeat(3, 33.333%);)</h4> 
+                                    <div class="grid-elements grid-construction-twelvth">
+                                        <div class="grid-box">grid-box: 1</div>
+                                        <div class="grid-box">grid-box: 2</div>
+                                        <div class="grid-box">grid-box: 3</div>
+                                        <div class="grid-box">grid-box: 4</div>
+                                        <div class="grid-box">grid-box: 5</div>
+                                        <div class="grid-box">grid-box: 6</div>
+                                    </div>
+                                 </div>
+                                 <!-- ======= -->
+                                 <div class="grid-block">
+                                    <h4 class="grid-block__title">minmax(min,max) - визначає діапазон розмірів більше-дорівнює min та менше-дорівнює max. Якщо max менше min, то max ігнорується, а minmax(min,max) обробляється як min. Значення в fr можуть бути встановлені лише як максимальне.
+                                    Властивість .grid-контейнера
+                                    display: grid;
+                                    grid-template-columns: 1.5fr 3fr 4.5fr;
+                                    grid-template-rows: minmax(200px,300px) minmax(100px,200px) minmax(250px,150px);</h4> 
+                                    <div class="grid-elements grid-construction-thirteenth">
+                                        <div class="grid-box">grid-box: 1</div>
+                                        <div class="grid-box">grid-box: 2</div>
+                                        <div class="grid-box">grid-box: 3</div>
+                                        <div class="grid-box">grid-box: 4</div>
+                                        <div class="grid-box">grid-box: 5</div>
+                                        <div class="grid-box">grid-box: 6</div>
+                                    </div>
+                                 </div>
+                                 <!-- ======= -->
+                                 <div class="grid-block">
+                                    <h4 class="grid-block__title">auto-fill - не враховує наявність всіх елементів; при збільшені висоти контейнера елементи = 1fr більше-дорівнює 200px і збережеться місце-рядок для недоданих елементів по більше-дорівнює 200px.
+                                    Властивість .grid-контейнера
+                                    display: grid;
+                                    height: 1000px;
+                                    grid-template-columns: 1.5fr 3fr 4.5fr;
+                                    grid-template-rows: repeat(auto-fill,minmax(200px, 1fr));</h4> 
+                                    <div class="grid-elements grid-construction-fourteenth">
+                                        <div class="grid-box">grid-box: 1</div>
+                                        <div class="grid-box">grid-box: 2</div>
+                                        <div class="grid-box">grid-box: 3</div>
+                                        <div class="grid-box">grid-box: 4</div>
+                                        <div class="grid-box">grid-box: 5</div>
+                                        <div class="grid-box">grid-box: 6</div>
+                                    </div>
+                                 </div>
+                                 <!-- ======= -->
+                                 <div class="grid-block">
+                                    <h3 class="grid-block__firsttitle">Властивість grid-template</h3>
+                                    <h4 class="grid-block__title">Grid-template - універсальний запис: rows / columns;
+                                        Властивість .grid-контейнера
+{display: grid;
+grid-template: 1.5fr 3fr 4.5fr / repeat(auto-fill, minmax(200px, 1fr));}</h4> 
+                                    <div class="grid-elements grid-construction-fiveteenth">
+                                        <div class="grid-box">grid-box: 1</div>
+                                        <div class="grid-box">grid-box: 2</div>
+                                        <div class="grid-box">grid-box: 3</div>
+                                        <div class="grid-box">grid-box: 4</div>
+                                        <div class="grid-box">grid-box: 5</div>
+                                        <div class="grid-box">grid-box: 6</div>
+                                        <div class="grid-box">grid-box: 1</div>
+                                        <div class="grid-box">grid-box: 2</div>
+                                        <div class="grid-box">grid-box: 3</div>
+                                        <div class="grid-box">grid-box: 4</div>
+                                        <div class="grid-box">grid-box: 5</div>
+                                        <div class="grid-box">grid-box: 6</div>
+                                        <div class="grid-box">grid-box: 1</div>
+                                        <div class="grid-box">grid-box: 2</div>
+                                        <div class="grid-box">grid-box: 3</div>
+                                        <div class="grid-box">grid-box: 4</div>
+                                        <div class="grid-box">grid-box: 5</div>
+                                        <div class="grid-box">grid-box: 6</div>
+                                    </div>
+                                 </div>
+                                 <!-- ======= -->
+                                 <div class="grid-block">
+                                    <h3 class="grid-block__firsttitle">Властивість grid-auto-columns та grid-auto-flow: column</h3>
+                                    <h4 class="grid-block__title">Grid-auto-columns - дозволяє керувати розміром стовпців неявної частини сітки. Якщо наведено кілька розмірів частини, шаблон повторюється за необхідності, щоб знайти розмір неявних частин. Перша неявна частина сітки після явної сітки отримує перший заданий розмір і т.д. Властивості не успадковуються.
+
+Grid-auto-flow: column - автоматично розміщує елементи, заповнюючи кожен стовпець по черзі зліва на право, додаючи нові стовпці за необхідності.
+
+Властивість .grid-контейнера
+{display: grid;
+grid-template: 1fr / repeat(3,200px);
+grid-auto-flow: column
+grid-auto-columns: 50px;}</h4> 
+                                    <div class="grid-elements grid-construction-sixteenth">
+                                        <div class="grid-box">grid-box: 1</div>
+                                        <div class="grid-box">grid-box: 2</div>
+                                        <div class="grid-box">grid-box: 3</div>
+                                        <div class="grid-box">grid-box: 4</div>
+                                        <div class="grid-box">grid-box: 5</div>
+                                        <div class="grid-box">grid-box: 6</div>
+                                    </div>
+                                 </div>
+                                 <!-- ======= -->
+                                 <div class="grid-block">
+                                    <h3 class="grid-block__firsttitle">Вирівнювання ВМІСТУ вздовж горизонтальної лінії</h3>
+                                    <h4 class="grid-block__title">GJustify-items - вирівнює вміст сітки вздовж горизонтальної осі. Це значення застосовується до всіх елементів сітки всередині контейнера. Власність не успадкована.
+Justify-items: stretch - за замовчуванням, заповнює всю ширину комірки.
+Властивість .grid-контейнера
+{display: grid;
+grid-template: repeat(2,100px) / repeat(3,1fr);
+justify-items: stretch;}</h4> 
+                                    <div class="grid-elements grid-construction-seventhteenth">
+                                        <div class="grid-box">grid-box: 1</div>
+                                        <div class="grid-box">grid-box: 2</div>
+                                        <div class="grid-box">grid-box: 3</div>
+                                        <div class="grid-box">grid-box: 4</div>
+                                        <div class="grid-box">grid-box: 5</div>
+                                        <div class="grid-box">grid-box: 6</div>
+                                    </div>
+                                 </div>
+                                 <!-- ======= -->
+                                 <div class="grid-block">
+                                    <h4 class="grid-block__title">Justify-items: start - вирівнює вміст по лівій стороні комірки.
+                                        display: grid;
+grid-template: repeat(2,100px) / repeat(3,1fr);
+justify-items: start;
+                                    </h4> 
+                                    <div class="grid-elements grid-construction-eighteenth">
+                                        <div class="grid-box">grid-box: 1</div>
+                                        <div class="grid-box">grid-box: 2</div>
+                                        <div class="grid-box">grid-box: 3</div>
+                                        <div class="grid-box">grid-box: 4</div>
+                                        <div class="grid-box">grid-box: 5</div>
+                                        <div class="grid-box">grid-box: 6</div>
+                                    </div>
+                                 </div>
+                                 <!-- ======= -->
+                                 <div class="grid-block">
+                                    <h4 class="grid-block__title">Justify-items: end  
+                                        
+                                    </h4> 
+                                    <div class="grid-elements grid-construction-nineteenth">
+                                        <div class="grid-box">grid-box: 1</div>
+                                        <div class="grid-box">grid-box: 2</div>
+                                        <div class="grid-box">grid-box: 3</div>
+                                        <div class="grid-box">grid-box: 4</div>
+                                        <div class="grid-box">grid-box: 5</div>
+                                        <div class="grid-box">grid-box: 6</div>
+                                    </div>
+                                 </div>
+                                   <!-- ======= -->
+                                 <div class="grid-block">
+                                    <h4 class="grid-block__title">Justify-items: center  
+                                        
+                                    </h4> 
+                                    <div class="grid-elements grid-construction-twenteenth">
+                                        <div class="grid-box">grid-box: 1</div>
+                                        <div class="grid-box">grid-box: 2</div>
+                                        <div class="grid-box">grid-box: 3</div>
+                                        <div class="grid-box">grid-box: 4</div>
+                                        <div class="grid-box">grid-box: 5</div>
+                                        <div class="grid-box">grid-box: 6</div>
+                                    </div>
+                                 </div>
+                                  <!-- ======= -->
+                                 <div class="grid-block">
+                                    <h3 class="grid-block__firsttitle">Grid (fr) + gap</h3>
+                                    <h4 class="grid-block__title">Grid (fr) + gap - працює з grid у f, але не в %.
+
+Властивість .grid-контейнера
+{display: grid;
+grid-template: repeat(2,100px) / repeat(3, 1fr);
+gap: 20px; }</h4> 
+                                    <div class="grid-elements grid-construction-twentyone">
+                                        <div class="grid-box">grid-box: 1</div>
+                                        <div class="grid-box">grid-box: 2</div>
+                                        <div class="grid-box">grid-box: 3</div>
+                                        <div class="grid-box">grid-box: 4</div>
+                                        <div class="grid-box">grid-box: 5</div>
+                                        <div class="grid-box">grid-box: 6</div>
+                                    </div>
+                                 </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- =========================================================================================== -->
+                <div class="euphoriablock">
+                    <div class="euphoriablock__container">
+                        <div class="sale-items">
+                            <div class="sale-item item-yellow">
+                                <div class="sale-item__label">Low Price</div>
+                                <div class="sale-item__title">High Coziness</div>
+                                <div class="sale-item__text">UPTO 50% OFF</div>
+                                <a href="#!" class="sale-item__link">Explore Items</a>
+                            </div>
+                            <!-- = -->
+                             <div class="sale-item item-fiolet">
+                                <div class="sale-item__label">Beyoung Presents </div>
+                                <div class="sale-item__title">Breezy Summer</div>
+                                <div class="sale-item__text">UPTO 50% OFF</div>
+                                <a href="#!" class="sale-item__link">Explore Items</a>
+                            </div>
+                        </div>
+
+                        <div class="newarrival">
+                            <div class="newarrival-label">
+                                New Arrival
+                            </div>
+                            <div class="wrap-for-slider">
+                                <button  class="arrow-button left-button" type="button" >
+                                    <svg class="new__icon-arrow new__icon-arrow--right" xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
+									<path d="M14.5857 7L1.58569 7M6.58569 13L1.2928 7.70711C0.902277 7.31658 0.902277 6.68342 1.2928 6.29289L6.58569 0.999999" stroke="#3C4242" stroke-width="1.6" stroke-linecap="round"></path>
+								</svg>
+                                </button>
+                                <div class="slider">
+                                <div class="slider-item">
+                                    <div class="slider-link-img">
+                                        <a href="#1" class="link-img">
+                                            <img src="img/sliderimg1.png" class="slider-img" alt="img1">
+                                        </a>
+                                    </div>
+                                    <div class="slider__text"><a href="#!">Knitted Joggers</a></div>
+                                </div>
+                                <div class="slider-item">
+                                    <div class="slider-link-img">
+                                        <a href="#1" class="link-img">
+                                            <img src="img/sliderimg2.png" class="slider-img" alt="img1">
+                                        </a>
+                                    </div>
+                                    <div class="slider__text"><a href="#!">Full Sleeve</a></div>
+                                </div>
+                                <div class="slider-item">
+                                    <div class="slider-link-img">
+                                        <a href="#1" class="link-img">
+                                            <img src="img/sliderimg3.png" class="slider-img" alt="img1">
+                                        </a>
+                                    </div>
+                                    <div class="slider__text"><a href="#!">Active T-Shirts</a></div>
+                                </div>
+                                <div class="slider-item">
+                                    <div class="slider-link-img">
+                                        <a href="#1" class="link-img">
+                                            <img src="img/sliderimg4.png" class="slider-img" alt="img1">
+                                        </a>
+                                    </div>
+                                    <div class="slider__text"><a href="#!">Urban Shirts</a></div>
+                                </div>
+                            </div>
+                            <button class="arrow-button right-button" type="button">
+								<svg class="new__icon-arrow new__icon-arrow--right" xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
+									<path d="M14.5857 7L1.58569 7M6.58569 13L1.2928 7.70711C0.902277 7.31658 0.902277 6.68342 1.2928 6.29289L6.58569 0.999999" stroke="#3C4242" stroke-width="1.6" stroke-linecap="round"></path>
+								</svg>
+                            </button>
+                            </div>
+                        </div>
+
+                        <div class="bigsavingzone">
+                            <div class="newarrival-label">
+                                Big Saving Zone
+                            </div>
+                            <div class="big-zone__items">
+                        <div class="big-zone__item big-zone__item--left-content">
+                            <a href="#" class="big-zone__image">
+                                <img src="img/saving01.png" alt="image">
+                            </a>
+                            <div class="big-zone__content">
+                                <a href="#" class="big-zone__subtitle">
+                                    <h2>Hawaiian
+                                        Shirts</h2>
+                                </a>
+                                <h4 class="big-zone__desc">Dress up in summer vibe</h4>
+                                <div class="big-zone__discount">
+                                    <p>UPTO 50% OFF</p>
+                                </div>
+                                <a href="#" class="big-zone__button big-zone__button--arrow-white">SHOP NOW</a>
+                            </div>
+                        </div>
+                        <div class="big-zone__item">
+                            <a href="#" class="big-zone__image">
+                                <img src="img/saving02.png" alt="image">
+                            </a>
+                            <div class="big-zone__content">
+                                <a href="#" class="big-zone__button big-zone__button--black">Limited Stock</a>
+                                <a href="#" class="big-zone__subtitle">
+                                    <h2>Printed<br>
+                                        T-Shirt</h2>
+                                </a>
+                                <h4 class="big-zone__desc">New Designs Every Week</h4>
+                                <div class="big-zone__discount">
+                                    <p>UPTO 40% OFF</p>
+                                </div>
+                                <a href="#" class="big-zone__button big-zone__button--arrow-white">SHOP NOW</a>
+                            </div>
+                        </div>
+                        <div class="big-zone__item big-zone__item--black-text">
+                            <a href="#" class="big-zone__image">
+                                <img src="img/saving03.png" alt="image">
+                            </a>
+                            <div class="big-zone__content">
+                                <a href="#" class="big-zone__subtitle">
+                                    <h2>Cargo
+                                        Joggers</h2>
+                                </a>
+                                <h4 class="big-zone__desc">Move with style &amp; comfort</h4>
+                                <div class="big-zone__discount">
+                                    <p>UPTO 50% OFF</p>
+                                </div>
+                                <a href="#" class="big-zone__button big-zone__button--black-border big-zone__button--arrow-black">SHOP NOW</a>
+                            </div>
+                        </div>
+                        <div class="big-zone__item big-zone__item--black-text">
+                            <a href="#" class="big-zone__image">
+                                <img src="img/saving04.png" alt="image">
+                            </a>
+                            <div class="big-zone__content">
+                                <a href="#" class="big-zone__subtitle big-zone__subtitle--big">
+                                    <h2>Urban
+                                        Shirts</h2>
+                                </a>
+                                <h4 class="big-zone__desc big-zone__desc--big">Live In Confort</h4>
+                                <div class="big-zone__discount big-zone__discount--big">
+                                    <p>FLAT 60% OFF</p>
+                                </div>
+                                <a href="#" class="big-zone__button big-zone__button--big big-zone__button--black-border big-zone__button--arrow-black">SHOP NOW</a>
+                            </div>
+                        </div>
+                        <div class="big-zone__item big-zone__item--black-text">
+                            <a href="#" class="big-zone__image">
+                                <img src="img/saving05.png" alt="image">
+                            </a>
+                            <div class="big-zone__content">
+                                <a href="#" class="big-zone__subtitle big-zone__subtitle--big">
+                                    <h2>Oversized
+                                        T-Shirts</h2>
+                                </a>
+                                <h4 class="big-zone__desc big-zone__desc--big">Street Style Icon</h4>
+                                <div class="big-zone__discount big-zone__discount--big">
+                                    <p>UPTO 50% OFF</p>
+                                </div>
+                                <a href="#" class="big-zone__button big-zone__button--big
+                                big-zone__button--black-border big-zone__button--arrow-black">SHOP NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="footer">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex tempore vitae accusantium laborum voluptatum, laudantium sint enim distinctio eaque aliquam facere ullam animi dolore, quisquam quasi officiis. Veritatis maxime corrupti laudantium? Libero ducimus ipsam distinctio non. Officiis tempore temporibus consequatur nobis iure rem quaerat, omnis hic deserunt voluptatum cumque aut.
+            </footer>
+        </div>
+	</body>
+</html>
+ 
